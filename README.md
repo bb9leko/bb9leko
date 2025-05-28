@@ -15,7 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=bb9leko&theme=dark_dimmed)](https://github.com/anuraghazra/github-readme-stats)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=bb9leko&theme=dark_dimmed)](https://github.com/anuraghazra/github-readme-stats)
 
 ![Snake animation](https://github.com/bb9leko/bb9leko/blob/output/github-contribution-grid-snake.svg)
 
