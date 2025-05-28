@@ -16,4 +16,10 @@ Here are some ideas to get you started:
 -->
 ![Snake animation](https://github.com/bb9leko/bb9leko/blob/output/github-contribution-grid-snake.svg)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dist/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="dist/github-snake.svg" />
+  <img alt="github-snake" src="dist/github-snake.svg" />
+</picture>
+
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=bb9leko)](https://github.com/anuraghazra/github-readme-stats)
