@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 */12 * * *" # Executa a cada 12 horas
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 permissions:
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do repositório
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Versão mais recente
 
       - name: Gerar a animação da cobrinha
         uses: Platane/snk@v3
@@ -30,9 +30,16 @@ jobs:
             
       - name: Commit e push da animação gerada
         run: |
-           git config --global user.name "GitHub Actions"
-           git config --global user.email "actions@github.com"
-           git add dist/
-           git commit -m "Atualização da animação da cobra"
-           git push
-
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add dist/
+          
+          # Verificar se há mudanças
+          if git diff --cached --quiet; then
+            echo "✅ Nenhuma mudança para commitar"
+          else
+            echo "📝 Commitando mudanças..."
+            git commit -m "🐍 Atualização da animação da cobra"
+            git push
+            echo "✅ Push realizado com sucesso"
+          fi
